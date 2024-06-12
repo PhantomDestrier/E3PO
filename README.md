@@ -35,3 +35,4 @@ ERP method is used to map a spherical 360-degree video onto a 2D rectangular pla
 2. Uniform Angular Steps: Both polar (vertical) and azimuthal (horizontal) angles are sampled uniformly, maintaining consistent angular steps.
 3. Aspect Ratio: The resulting image has an aspect ratio of 2:1, as the full 360-degree longitude is mapped to the width and 180-degree latitude to the height.
 4. Pixel Density: This method inherently causes pixel density to be non-uniform, with higher density near the poles and lower density near the equator.
+5. Tile-Based Streaming: In ERP, video tiles are often streamed based on the user’s current field of view (FOV). This means only the necessary portions of the video are downloaded and displayed at high resolution, while the rest might be of lower resolution or not loaded at all.
